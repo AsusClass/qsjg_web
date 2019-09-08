@@ -1,7 +1,7 @@
 // var test_url = "http://127.0.0.1:1234";
 // var product_url = "http://www.ncqsjg.cn:5555";
 // var  true_url = test_url
-var imWebsite = "http://www.ncqsjg.cn:8888";
+// var imWebsite = "http://www.ncqsjg.cn:8888";
 $.ajax({
 	url: true_url+"/recentnews",
 	data: {
@@ -50,7 +50,7 @@ $.ajax({
 					if(a[f].imgs == undefined) {
 						a[f].img = "img/nopic.jpg"
 					} else {
-						a[f].img = imWebsite + a[f].imgs[0].url
+						a[f].img = server_res_root + a[f].imgs[0].url
 					}
 					var h = "<td><div class='" + "new-shower" + "'><a href='" + c + a[f].id + "'><img src='" + a[f].img + "' /><p>" + a[f].title.substr(0, 16) + "<br/>" + a[f].title.substr(16, 16) + "</p></a></div></td>";
 					$("#sm").append(h)
@@ -61,7 +61,7 @@ $.ajax({
 					if(a[f].imgs == undefined || a[f].imgs.length == 0) {
 						a[f].img = "img/nopic.jpg"
 					} else {
-						a[f].img = imWebsite + a[f].imgs[0].url
+						a[f].img = server_res_root + a[f].imgs[0].url
 					}
 					var h = "<td><div class='" + "new-shower" + "'><a href='" + c + a[f].id + "'><img src='" + a[f].img + "' /><p>" + a[f].title.substr(0, 16) + "<br/>" + a[f].title.substr(16, 16) + "</p></a></div></td>";
 					$("#sm").append(h)

@@ -1,7 +1,6 @@
 var t = "暂无内容";
 var newsId = GetUrlParam("id");
 var type = parseInt(GetUrlParam("type"))
-var website = "http://www.ncqsjg.cn";
 console.info(newsId)
 console.info(type)
 
@@ -179,7 +178,7 @@ if(newsId==undefined){
 						}
 						var b = fujian[e].size / 1024 / 1024;
 						b = b.toFixed(2);
-						var h = "<li><a href='" + website + fujian[e].url + "' target='_blank'  onclick='fileCount(" + fujian[e].id + ")';>" + fujian[e].name + m + "</a><span>[文件大小：" + b + "Mb 下载次数：" + fujian[e].download_times + "次]</span></li>";
+						var h = "<li><a href='" + server_res_root + fujian[e].url + "' target='_blank'  onclick='fileCount(" + fujian[e].id + ")';>" + fujian[e].name + m + "</a><span>[文件大小：" + b + "Mb 下载次数：" + fujian[e].download_times + "次]</span></li>";
 						$("#fujian").append(h)
 					}
 				}
@@ -193,7 +192,7 @@ if(newsId==undefined){
 
 function fileCount(a) {
 	$.ajax({
-		url: "http://www.ncqsjg.cn:5555/file/count",
+		url: true_url+"/file/count",
 		data: {
 			id: a
 		},

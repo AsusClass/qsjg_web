@@ -28,7 +28,7 @@ $(function() {
 
 function start() {
 	timer = setInterval(function() {
-		i++;		
+		i++;
 		if(i == 6) {
 			i = 0
 		}
@@ -37,7 +37,7 @@ function start() {
 }
 
 function change() {
-	
+
 	$("img").eq(i).fadeIn(100).siblings().stop(true, true).fadeOut(10000);
 	sleep(10000000);
 		console.log('’')
