@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>『亲水建工』后台管理-修改密码</title>
+		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/admin_login.css" />
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+		<script src="js/js.js"></script>
+		<script type="text/javascript" src="js/jump.js"></script>
+		<script type="text/javascript" src="js/check.js"></script>
+
+	</head>
+
+	<body>
+		<div class="admin_login_wrap">
+			<div class="titleDiv">
+				<img src="images/favicon.png" alt="这里是图片" /> <span>修改管理员密码</span> </div>
+			<div class="adming_login_border">
+				<div class="admin_input">
+					<form id="myform" method="post">
+						<ul class="admin_items">
+							<li>
+								<label for="user">用户名(不可修改)：</label>
+								<input type="text" name="user" value="" id="user" size="35" class="admin_input_style" readonly />
+							</li>
+							<li>
+								<label for="pwd">请输入旧密码：</label>
+								<input type="password" name="old_pwd" value="" id="old_pwd" onblur="chkvalue(this,'old_pwdMsg')" size="35" class="admin_input_style" />
+								<p id="old_pwdMsg" style="color: red; display: inline;"></p>
+							</li>
+							<li>
+								<label for="pwd">请输入新密码：</label>
+								<input type="password" name="new_pwd" value="" id="new_pwd" onblur="chkvalue(this,'new_pwdMsg')" size="35" class="admin_input_style" />
+								<p id="new_pwdMsg" style="color: red;"></p>
+							</li>
+							<li>
+								<label for="pwd">确认新密码：</label>
+								<input type="password" name="qrnew_pwd" value="" id="qrnew_pwd" onblur="qrnewpwd(this,'qrnew_pwdMsg')" size="35" class="admin_input_style" />
+								<p id="qrnew_pwdMsg" style="color: red;"></p>
+							</li>
+							<li>
+								<input type="button" onclick="myLogin()" tabindex="3" value="提交" class="btn btn-primary" />
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<p class="admin_copyright">
+				<a tabindex="5" href="http://www.ncqsjg.cn/" target="_blank">返回首页</a>
+				<a tabindex="5" href="http://www.ncqsjg.cn/admin/" target="_blank">返回后台</a> &copy; 2018 Powered by
+				<a href="http://ncqsjg.luov.top">NCUWork</a>
+			</p>
+
+		</div>
+		<script type="text/javascript">
+			function chkvalue(txt, name) {
+				var relue = /^[a-zA-Z0-9_]{6,16}$/;
+				console.log(txt.value.match(relue));
+				var show = document.getElementById(name);
+				console.log(show);
+				if(txt.value == "") show.innerText = "输入不能为空";
+				else if(txt.value.match(relue) == null) {
+					show.innerText = "密码以字母开头，长度在6~18之间，只能包含字符、数字和下划线";
+				} else show.style.display = "none";
+			}
+
+			function qrnewpwd(txt, name) {
+				var show = document.getElementById(name);
+				var pwd = document.getElementById("new_pwd");
+				console.log(pwd.value, txt.value)
+				if(txt.value == "") {
+					show.innerText = "请再次输入密码";
+				}
+				if(txt.value != pwd.value) {
+					show.innerText = "两次密码输入不一致";
+				} else {
+					show.innerText = "";
+				}
+			}
+
+			function checkPwd(jsons) {
+				var userRelue = /^[a-zA-Z0-9;]{3,16}$/;
+				var pwdRelue = /^[a-zA-Z0-9_]{6,16}$/;
+//				if(jsons.user.match(userRelue) == null) {
+//					alert("用户名必须是以数字开头，长度3~16位，只能包含字母和数字");
+//					return false;
+//				} else
+				if(jsons.old_pwd.match(pwdRelue) == null) {
+					alert("旧密码不符合格式，请联系管理员");
+					return false;
+				} else if(jsons.new_pwd.match(pwdRelue) == null) {
+					alert("密码长度在6~18之间，只能包含字符、数字和下划线");return false;
+				} else if(jsons.new_pwd != jsons.qrnew_pwd) {
+					alert("两次输入的密码不一致，请检查！");return false;
+				}else{
+					return true;
+				}
+			}
+			var q = getCookie('token');
+
+			function myLogin() {
+				var website = 'http://47.100.192.151:5555/';
+				var myform = $("#myform");
+				//返回字符串xxx=xxx&yyy=yyy;   
+				var formData = myform.serialize();
+				$("#show").html(formData);
+				// 返回的是json数组[{xxx:xxx},{yyy:yyy}]
+				formData = myform.serializeArray();
+				$("#show2").html(JSON.stringify(formData));
+				//将json数组转为json 对象
+				var jsons = transformToJson(formData);
+				//console.log(jsons);
+				$("#show3").html(JSON.stringify(jsons));
+				var flag=checkPwd(jsons);
+				if(flag==false) {
+					location.reload(force)
+				} else {
+					jsons["token"] = q;
+					console.log(jsons);
+					//get是通过地址栏传参数
+					$.ajax({
+						url: website + "admin/pwd/update",
+						cache: false,
+						type: "post",
+						datatype: "json",
+						contentType: "application/x-www-form-urlencoded;charset=utf-8",
+						data: jsons,
+						success: function(data) {
+							//console.log(data);
+							if(data.code == "200") {
+								//根据后台返回值确定是否操作成功
+								alert("修改密码成功，请重新登录！");
+								//							document.cookie = "token=" + data.data.token;
+								window.location.href = "login.html";
+							} else {
+								alert("用户名或者密码错误，请检查或联系管理员");
+							}
+						}
+					});
+				}
+			}
+		</script>
+	</body>
+
+</html>
