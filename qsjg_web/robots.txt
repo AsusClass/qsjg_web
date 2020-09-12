@@ -1,6 +1,0 @@
-# robots.txt
-User-agent: *
-Disallow: 
-Disallow: /admin/
-Disallow: /js/
-Disallow: /css/

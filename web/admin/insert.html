@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>新建文章-后台管理</title>
+		<link rel="icon" href="favicon.ico" />
+		<link type="text/css" rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="css/summernote.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<style type="text/css">
+			.m {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/summernote.js"></script>
+		<script type="text/javascript" src="lang/summernote-zh-CN.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/jump.js"></script>
+		<script type="text/javascript" src="js/check.js"></script>
+		<!-- 中文-->
+		<script type="text/javascript" src="js/insertAjax.js"></script>
+	</head>
+
+	<body>
+		<div class="topbar-wrap white">
+			<div class="topbar-inner clearfix">
+				<div class="topbar-logo-wrap clearfix">
+					<h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">后台管理</a></h1>
+					<ul class="navbar-list clearfix">
+						<li><img id="logo" src="images/favicon.png" /></li>
+						<li>
+							<a class="on" href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="http://www.ncqsjg.cn/" target="_blank">网站首页</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top-info-wrap">
+					<ul class="top-info-list clearfix">
+						<li>
+							<a href="#">欢迎，<span id="user"></span></a>
+						</li>
+						<li>
+							<a href="changeadmin.html">修改密码</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" onclick="dropOut()">退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container clearfix">
+			<div class="sidebar-wrap">
+				<div class="sidebar-title">
+					<h1>菜单</h1>
+				</div>
+				<div class="sidebar-content">
+					<ul class="sidebar-list">
+						<li>
+							<a href="#"><i class="icon-font">&#xe003;</i>常用操作</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="design.html?type=0&page=1"><i class="icon-font">&#xe008;</i>作品管理</a>
+								</li>
+								<li>
+									<a href="insert.html?id=0.html"><i class="icon-font">&#xe005;</i>新增文章</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="icon-font">&#xe018;</i>系统管理</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="design.html?type=0&page=1"><i class="icon-font">&#xe017;</i>作品管理</a>
+								</li>
+								<li>
+									<a href="insert.html?id=0"><i class="icon-font">&#xe037;</i>新增文章</a>
+								</li>
+								<li>
+									<a href="design.html?type=1&page=1"><i class="icon-font">&#xe046;</i>修改简介</a>
+								</li>
+								<li>
+									<a href="design.html?type=7&page=1"><i class="icon-font">&#xe046;</i>修改联系我们</a>
+								</li>
+								<!--<li>
+									<a href="index.html"><i class="icon-font">&#xe045;</i>修改招聘启事</a>
+								</li>-->
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--/sidebar-->
+			<div class="main-wrap">
+				<div class="crumb-wrap">
+					<div class="crumb-list"><i class="icon-font"></i>
+						<a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span>
+						<a class="crumb-name" href="/jscss/admin/design/">作品管理</a><span class="crumb-step">&gt;</span><span>新增作品</span></div>
+				</div>
+				<div class="result-wrap">
+					<div class="result-content">
+						<form id="myform" name="myform" enctype="multipart/form-data">
+							<table class="insert-tab" width="100%">
+								<tbody>
+									<tr>
+										<th width="120"><i class="require-red">*</i>分类：</th>
+										<td>
+											<select name="typeId" id="catid" class="required">
+												<!--<option value="">请选择</option>-->
+												<option value="5">公告发布</option>
+												<option value="2">政策法规</option>
+												<option value="3">公司新闻</option>
+												<option value="6">人才招聘</option>
+												<option value="8">行业动态</option>
+												<option value="7">联系我们</option>
+												<option value="1">公司简介</option>
+											</select><i class="require-red" style="display:none" id="typeIdAlert"> &nbsp;请选择分类！</i>
+										</td>
+									</tr>
+									<tr>
+										<th><i class="require-red">*</i>标题：</th>
+										<td>
+											<input class="common-text required" id="title" name="title" size="50" value="" type="text""><i id="titleAlert" class="require-red" style="display:none"> &nbsp;请填写标题！</i>
+										</td>
+									</tr>
+									<tr>
+										<th>时间：</th>
+										<td>新增新闻将会自动设置为提交时间。需要修改请等待新闻提交后重新编辑文章。<!--<input id="date" name="date" type="datetime-local" value="2018-09-15T12:12" min="2018-08-16" max="2018-09-26"/>--></td>
+									</tr>
+									<tr>
+										<th>作者：</th>
+										<td><input class="common-text" name="author" size="50" value="admin" id="author" type="text"></td>
+									</tr>
+									<tr>
+										<th><i class="require-red">*</i>内容：（建议<br/>使用ctrl+shift+v粘贴或者右键→粘贴为纯文本）<br/><i style="display:none" class="require-red" id="editordataAlert"> &nbsp;请填写内容！</i></th>
+										<td>
+											<!--<textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%;" rows="10"></textarea>-->
+											<div class="m">
+												<textarea class="summernote" name="content" id="editor">在这里输入文字,首行顶格起，不用缩进或空格。到时候会自动渲染。<br / >支持图文混排，所见即所得。 注意选择类别！！</textarea>
+												<p id="imgList" hidden></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>附件1：</th>										
+										<td><span><input name="smallimg" type="file" id="file_1" />
+										<input type="button" id="upFile1" value="上传" /><img src="images/wait.gif" style="display:none" id="imgWait" /></span>
+										</td>
+
+									</tr>
+									<tr>
+										<th>附件2：</th>										
+										<td><span><input name="smallimg" type="file" id="file_2" />
+										<input type="button" id="upFile2" value="上传" /><img src="images/wait.gif" style="display:none" id="imgWait" /></span>
+											
+											<!--<p id="fileList" type="display:none"></p>-->
+										</td>
+
+									</tr>
+									<tr>
+										<th>附件3：</th>										
+										<td><span><input name="smallimg" type="file" id="file_3" />
+										<input type="button" id="upFile3" value="上传" /><img src="images/wait.gif" style="display:none" id="imgWait" /></span>
+											
+											<!--<p id="fileList" type="display:none"></p>-->
+										</td>
+
+									</tr>
+									<tr>
+										<th>附件4：</th>										
+										<td><span><input name="smallimg" type="file" id="file_4" />
+										<input type="button" id="upFile4" value="上传" /><img src="images/wait.gif" style="display:none" id="imgWait" /></span>
+											
+											<!--<p id="fileList" type="display:none"></p>-->
+											<p id="fileList" hidden></p>
+										</td>
+
+									</tr>
+									<tr>
+										<th id="fileListShow"></th>										
+										<td>
+										</td>
+									</tr>
+									<tr>
+										<th></th>
+										<td>
+											<input onclick="mySubmit()" class="btn btn-primary btn6 mr10" value="提交" type="button">
+											<input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+						</div>
+					</div>
+
+				</div>
+				<!--/main-->
+			</div>
+	</body>
+
+</html>
