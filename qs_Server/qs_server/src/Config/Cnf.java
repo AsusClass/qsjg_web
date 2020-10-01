@@ -32,7 +32,7 @@ public class Cnf {
     /**
      * MySQL连接地址（可直连服务器数据库）
      */
-    public final static String MYSQL_URL = "jdbc:mysql://47.100.192.151/qs?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT&useSSL=false";
+    public final static String MYSQL_URL = "jdbc:mysql://127.0.0.1/qs?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT&useSSL=false";
 
     /**
      * MySQL驱动
