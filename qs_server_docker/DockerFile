@@ -1,0 +1,4 @@
+FROM java:8 
+MAINTAINER leo 
+COPY ./qs_server.jar /leo/qs.jar 
+ENTRYPOINT ["java","-jar","/leo/qs.jar"]
