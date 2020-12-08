@@ -59,7 +59,8 @@ public class FileUtil {
                         return null;
                     }
                     if (hasFileName()) {  //判断
-                        int maxId = Integer.parseInt(DaoImg.queryLateImg().get("id").toString());  //数据库最大id+1
+                        int maxId = 100;
+//                        int maxId = Integer.parseInt(DaoImg.queryLateImg().get("id").toString());  //数据库最大id+1
                         file = createNewFile(folder.concat(Integer.toString(maxId+1).concat("_").concat(fileForm.fileName))); // 创建文件  这样就不会重复
                         fileOStream = new FileOutputStream(file);  //文件写入对象
 

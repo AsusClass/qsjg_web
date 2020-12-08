@@ -112,14 +112,14 @@ public class ReponseApi {
     /**
      * 插入附件
      */
-    @FileUpload(path = "/file/add", storeFolder = "/data/prd/qs/res/files/")
+    @FileUpload(path = "/file/add", storeFolder = Cnf.server_fujian_save_root) //Cnf.server_fujian_save_root
     public static Object doInsertFiles(String localPath) {
         Map resp = null;
         //如果localPath不为null，说明文件已成功存储至本地
         if (localPath != null) {
             File tempFile = new File(localPath);
             resp = new HashMap() {{
-                put("url", DataUtil.generateUrl(tempFile,Cnf.IMG_ROOT_PATH));
+                put("url", DataUtil.generateUrl(tempFile,Cnf.FUJIAN_ROOT_PATH));
                 put("fileName", tempFile.getName().split("_",2)[1]);
                 put("id", DataUtil.insertFileRecordToDB(tempFile));
             }};

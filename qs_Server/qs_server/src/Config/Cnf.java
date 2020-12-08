@@ -54,10 +54,17 @@ public class Cnf {
     /**
      * 服务器本地图片保存路径
      */
-    public final static String server_img_save_root = "/data/prd/qs/res/imgs/";
+    public final static String server_img_save_root = "/leo/prd/qs/res/imgs/";
+
+
+    /**
+     * 服务器本地附件保存路径
+     */
+    public final static String server_fujian_save_root = "/leo/prd/qs/res/files/";
+
 
     /**
      * 本地测试图片保存路径
      */
-    public final static  String test_img_save_root="/Users/lichongxi/code/java/lqlWebProject/lqlServer/test/imgs/";
+    public final static  String test_img_save_root="/Users/lichongxi/Leo/Code/java/qs_server/res/fujian/";
 }

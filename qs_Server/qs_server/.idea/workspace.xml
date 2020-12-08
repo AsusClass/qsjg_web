@@ -27,44 +27,158 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a12fef5-3ce2-4e1b-b680-9fa91eeaf5fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/qs_server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/dock/mysql_backup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/dock/mysql_backup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/mysql_backup/mysql_backup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/mysql_backup/mysql_backup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_cnf/debian-start" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_cnf/debian-start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_cnf/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_cnf/my.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/aria_log.00000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/aria_log_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/mysql/innodb_index_stats.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/mysql/innodb_table_stats.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/qs/admin_token.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/qs/admin_token.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/qs/fujian.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/qs/fujian.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/qs/news.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysql_data_docker/qs_mysql_data/qs/news.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lqlServer_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_49.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lqlServer_jar/lqlServer.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/Cnf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/Cnf.java" afterDir="false" />
-    </list>
+    <list default="true" id="6a12fef5-3ce2-4e1b-b680-9fa91eeaf5fb" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HttpServer/HttpMainServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HttpServer/ReponseApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HttpServer/Router.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="635">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="e#4969#4970#0" expanded="true" />
+                <element signature="e#5036#5037#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/FileUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/HandReqestBody.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Config/Cnf.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/HttpServer/ReponseApi.java" />
+        <option value="$PROJECT_DIR$/src/utils/FileUtil.java" />
+        <option value="$PROJECT_DIR$/src/Config/Cnf.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="74" />
+    <option name="width" value="1942" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectId" id="1iHLyOuZRRG1Xd4QxOfyqCZBdtW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="fujian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qs_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="HttpServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qs_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,13 +188,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/qs_server_jar" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607352641148" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.HttpMainServer">
     <configuration name="HttpMainServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HttpServer.HttpMainServer" />
       <module name="qs_server" />
@@ -94,24 +221,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="fastjson-1.2.49.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/fastjson-1.2.49.jar" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HttpMainServer" />
+        <item itemvalue="JAR Application.fastjson-1.2.49.jar" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6a12fef5-3ce2-4e1b-b680-9fa91eeaf5fb" name="Default Changelist" comment="" />
@@ -120,51 +244,336 @@
       <option name="presentableId" value="Default" />
       <updated>1601559826723</updated>
       <workItem from="1601559828453" duration="2020000" />
+      <workItem from="1607318703402" duration="3236000" />
+      <workItem from="1607350526189" duration="2714000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2714000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="74" width="1942" height="1173" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21526316" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2025902" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27844587" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1633" y="585" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601561539442">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="2391" y="114" key="#Project_Structure" timestamp="1607336429223">
+      <screen x="1982" y="0" width="1858" height="1080" />
+    </state>
+    <state x="2391" y="114" key="#Project_Structure/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607336429223" />
+    <state x="2365" y="195" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607318732922">
+      <screen x="1982" y="0" width="1858" height="1080" />
+    </state>
+    <state x="2365" y="195" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607318732922" />
+    <state x="3167" y="451" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1607336364082">
+      <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state x="1633" y="585" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1601561539442" />
-    <state x="1683" y="550" key="FileChooserDialogImpl" timestamp="1601561566651">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="3167" y="451" key="#com.intellij.ide.util.TreeClassChooserDialog/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607336364082" />
+    <state x="3203" y="424" key="FileChooserDialogImpl" timestamp="1607336367336">
+      <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state x="1683" y="550" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1601561566651" />
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1601562283977">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="3203" y="424" key="FileChooserDialogImpl/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607336367336" />
+    <state width="1815" height="219" key="GridCell.Tab.0.bottom" timestamp="1607336150571">
+      <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1601562283977" />
-    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1601562283977">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="219" key="GridCell.Tab.0.bottom/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607336150571" />
+    <state width="1815" height="219" key="GridCell.Tab.0.center" timestamp="1607336150570">
+      <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1601562283977" />
-    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1601562283977">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="219" key="GridCell.Tab.0.center/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607336150570" />
+    <state width="1815" height="219" key="GridCell.Tab.0.left" timestamp="1607336150570">
+      <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1601562283977" />
-    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1601562283977">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="219" key="GridCell.Tab.0.left/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607336150570" />
+    <state width="1815" height="219" key="GridCell.Tab.0.right" timestamp="1607336150570">
+      <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1601562283977" />
-    <state x="1383" y="370" key="SettingsEditor" timestamp="1601561586653">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="219" key="GridCell.Tab.0.right/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607336150570" />
+    <state x="2212" y="186" key="SettingsEditor" timestamp="1607335362067">
+      <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state x="1383" y="370" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1601561586653" />
+    <state x="2212" y="186" key="SettingsEditor/62.0.1858.1080/1982.0.1858.1080@1982.0.1858.1080" timestamp="1607335362067" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HttpServer/Router.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HttpServer/ReponseApi.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HttpServer/Router.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utils/FileUtil.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utils/FileUtil.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utils/FileUtil.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utils/FileUtil.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utils/FileUtil.java</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>lineStr.substring(lineStr.lastIndexOf(&quot;filename&quot;), lineStr.lastIndexOf(&quot;;&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lineStr.substring(lineStr.indexOf(&quot;filename&quot;), lineStr.lastIndexOf(&quot;;&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lineStr.substring(lineStr.indexOf(&quot;filename&quot;), lineStr.indexOf(&quot;;&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lineStr.substring(lineStr.indexOf(&quot;filename&quot;), lineStr.lastIndexOf(&quot;;\r\n&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lineStr.substring(lineStr.indexOf(&quot;filename&quot;), lineStr.lastIndexOf(&quot;\r\n&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/utils/HandReqestBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HttpServer/HttpMainServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HttpServer/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#4969#4970#0" expanded="true" />
+            <element signature="e#5036#5037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Cnf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HttpServer/ReponseApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>qs_server:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>qs_server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>fastjson-1.2.49</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
